@@ -13,33 +13,57 @@ import Contact from '../pages/Contact';
 import Legal from '../pages/Legal'
 
 
-export default function Header() {
-    return (
-      <Router>
+class Nav extends React.Component {
+
+
+    constructor(props) {
+        super(props);
+        this.state = { showMenu: false };
+        this.toggleMenu = this.toggleMenu.bind(this);
+      }
+
+
+      toggleMenu() {
+        this.setState(prevState => ({
+            showMenu : !prevState.showMenu
+        }))
+      }
+
+
+    render() {
+        return(
+            <Router>
         <div>
-          <nav>
-            <ul>
-              <li class="nav-item">
-                <Link to="/">Home</Link>
-              </li>
-              <li class="nav-item">
-                <Link to="/about">About</Link>
-              </li>
-              <li class="nav-item">
-                <Link to="/work">Work</Link>
-              </li>
-              <li class="nav-item">
-                <Link to="/contact">Contact</Link>
-              </li>
-              <li class="nav-item">
-                <Link to="/legal">Legal</Link>
-              </li>
-            </ul>
-          </nav>
-  
-          {/* A <Switch> looks through its children <Route>s and
-              renders the first one that matches the current URL. */}
-          <Switch>
+          <header>
+            <div onClick={this.toggleMenu} className={this.state.showMenu ? 'close menu-btn' : 'menu-btn'}>
+                <div className="btn-line"></div>
+                <div className="btn-line"></div>
+                <div className="btn-line"></div>
+            </div>
+
+            <nav className={this.state.showMenu ? 'menu show' : 'menu'}>
+                <div className={this.state.showMenu ? 'menu-branding show' : 'menu-branding'}>
+                    <div className="portrait">
+
+                    </div>
+                </div>
+                <ul className={this.state.showMenu ? 'menu-nav show' : 'menu-nav'}>
+                    <li onClick={this.toggleMenu} className={this.state.showMenu ? 'nav-item show' : 'nav-item'}>
+                        <Link className="nav-link" to="/">Home</Link>
+                    </li>
+                    <li onClick={this.toggleMenu} className={this.state.showMenu ? 'nav-item show' : 'nav-item'}>
+                        <Link className="nav-link" to="/about">About Me</Link>
+                    </li>
+                    <li onClick={this.toggleMenu} className={this.state.showMenu ? 'nav-item show' : 'nav-item'}>
+                        <Link className="nav-link" to="/work">Work</Link>
+                    </li>
+                    <li onClick={this.toggleMenu} className={this.state.showMenu ? 'nav-item show' : 'nav-item'}>
+                        <Link className="nav-link" to="/contact">How To Reach Me</Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <Switch>
             <Route path="/about">
               <About />
             </Route>
@@ -58,6 +82,8 @@ export default function Header() {
           </Switch>
         </div>
       </Router>
-    );
+        )
+    }
   }
   
+  export default Nav;
