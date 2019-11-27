@@ -1,13 +1,22 @@
-import React from 'react';
+import React from "react";
 
-function Work(props) {
-    return (
-      <div>
-        <h1>Work Page</h1>
-      </div>
 
-    )
+class Work extends React.Component {
+
+
+    constructor(props) {
+        super(props);
+      }
+
+    componentDidMount(){
+      document.body.classList.remove('bg-img');
+    }
+
+    render() {
+        return(
+          <div>Wörk</div>
+        )
+    }
   }
-
-
+  
   export default Work;
