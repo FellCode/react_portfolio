@@ -3,8 +3,6 @@ import Potrait from '../img/portrait.jpg'
 
 class About extends React.Component {
 
-
-
     componentDidMount(){
         document.body.classList.remove('bg-img')
     }
