@@ -3,6 +3,7 @@ import Potrait from '../img/portrait.jpg'
 
 function About(props) {
     return (
+    <div>
       <main id="about">
       <h1 className="lg-heading">
           About <span className="text-secondary">Me</span>
@@ -59,6 +60,10 @@ function About(props) {
       
   </main>
 
+    <footer id="main-footer">
+    Copyright &copy; 2018
+    </footer>
+</div>
     )
   }
 
