@@ -18,57 +18,24 @@ class Work extends React.Component {
             </h2>
             <div class="projects">
                 <div class="item">
-                    <a href="#!">
+                    <a href="https://github.com/FellCode/HCLI">
                         <img src="img/projects/project1.jpg" alt="project" />
                     </a>
-                    <a href="" class="btn-light">
+                    <a href="https://github.com/FellCode/HCLI" class="btn-light">
                     <i class="fa fa-eye"> Project</i>
                     </a>
-                    <a href="" class="btn-dark">
+                    <a href="https://github.com/FellCode/HCLI" class="btn-dark">
                         <i class="fa fa-github"> Github</i>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#!">
+                    <a href="https://github.com/FellCode/react_portfolio">
                         <img src="img/projects/project2.jpg" alt="project" />
                     </a>
-                    <a href="" class="btn-light">
+                    <a href="https://fellcode.me" class="btn-light">
                         <i class="fa fa-eye"> Project</i>
                     </a>
-                    <a href="" class="btn-dark">
-                        <i class="fa fa-github"> Github</i>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#!">
-                        <img src="img/projects/project3.jpg" alt="project"/>
-                    </a>
-                    <a href="" class="btn-light">
-                    <i class="fa fa-eye"> Project</i>
-                    </a>
-                    <a href="" class="btn-dark">
-                        <i class="fa fa-github"> Github</i>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#!">
-                        <img src="img/projects/project4.jpg" alt="project" />
-                    </a>
-                    <a href="" class="btn-light">
-                    <i class="fa fa-eye"> Project</i>
-                    </a>
-                    <a href="" class="btn-dark">
-                        <i class="fa fa-github"> Github</i>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#!">
-                        <img src="img/projects/project5.jpg" alt="project" />
-                    </a>
-                    <a href="" class="btn-light">
-                    <i class="fa fa-eye"> Project</i>
-                    </a>
-                    <a href="" class="btn-dark">
+                    <a href="https://github.com/FellCode/HCLI" class="btn-dark">
                         <i class="fa fa-github"> Github</i>
                     </a>
                 </div>
