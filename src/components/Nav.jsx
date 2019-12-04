@@ -22,7 +22,6 @@ class Nav extends React.Component {
         this.toggleMenu = this.toggleMenu.bind(this);
       }
 
-
       toggleMenu() {
         this.setState(prevState => ({
             showMenu : !prevState.showMenu
@@ -60,6 +59,9 @@ class Nav extends React.Component {
                     <li onClick={this.toggleMenu} className={this.state.showMenu ? 'nav-item show' : 'nav-item'}>
                         <Link className="nav-link" to="/contact">How To Reach Me</Link>
                     </li>
+                    <li onClick={this.toggleMenu} className={this.state.showMenu ? 'nav-item show' : 'nav-item'}>
+                        <Link className="nav-link" to="/privacy">Privacy</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -73,7 +75,7 @@ class Nav extends React.Component {
             <Route path="/contact">
               <Contact />
             </Route>
-            <Route path="/legal">
+            <Route path="/privacy">
               <Legal />
             </Route>
             <Route exact path="/">

@@ -26,60 +26,27 @@ class Work extends React.Component {
             <h2 className="sm-heading">
                 Check ouf some of my Projects
             </h2>
-            <div className="projects">
-                <div className="item">
-                    <a href="#!">
-                        <img src={Project1} alt="project" />
+            <div class="projects">
+                <div class="item">
+                    <a href="https://github.com/FellCode/HCLI">
+                        <img src="img/projects/project1.jpg" alt="project" />
                     </a>
-                    <a href="" className="btn-light">
-                        <FontAwesomeIcon icon={faEye} /> Projekt
+                    <a href="https://github.com/FellCode/HCLI" class="btn-light">
+                    <i class="fa fa-eye"> Project</i>
                     </a>
-                    <a href="" className="btn-dark">
-                        <FontAwesomeIcon icon={faGithub} /> Github
-                    </a>
-                </div>
-                <div className="item">
-                    <a href="#!">
-                        <img src={Project2} alt="project" />
-                    </a>
-                    <a href="" className="btn-light">
-                        <FontAwesomeIcon icon={faEye} /> Projekt
-                    </a>
-                    <a href="" className="btn-dark">
-                        <FontAwesomeIcon icon={faGithub} /> Github
+                    <a href="https://github.com/FellCode/HCLI" class="btn-dark">
+                        <i class="fa fa-github"> Github</i>
                     </a>
                 </div>
-                <div className="item">
-                    <a href="#!">
-                        <img src={Project3} alt="project"/>
+                <div class="item">
+                    <a href="https://github.com/FellCode/react_portfolio">
+                        <img src="img/projects/project2.jpg" alt="project" />
                     </a>
-                    <a href="" className="btn-light">
-                        <FontAwesomeIcon icon={faEye} /> Projekt
+                    <a href="https://fellcode.me" class="btn-light">
+                        <i class="fa fa-eye"> Project</i>
                     </a>
-                    <a href="" className="btn-dark">
-                        <FontAwesomeIcon icon={faGithub} /> Github
-                    </a>
-                </div>
-                <div className="item">
-                    <a href="#!">
-                        <img src={Project4} alt="project" />
-                    </a>
-                    <a href="" class="btn-light">
-                        <FontAwesomeIcon icon={faEye} /> Projekt
-                    </a>
-                    <a href="" className="btn-dark">
-                        <FontAwesomeIcon icon={faGithub} /> Github
-                    </a>
-                </div>
-                <div className="item">
-                    <a href="#!">
-                        <img src={Project5} alt="project" />
-                    </a>
-                    <a href="" className="btn-light">
-                        <FontAwesomeIcon icon={faEye} /> Projekt
-                    </a>
-                    <a href="" className="btn-dark">
-                        <FontAwesomeIcon icon={faGithub} /> Github
+                    <a href="https://github.com/FellCode/HCLI" class="btn-dark">
+                        <i class="fa fa-github"> Github</i>
                     </a>
                 </div>
             </div>
