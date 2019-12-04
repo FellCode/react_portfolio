@@ -6,9 +6,6 @@ import {faEye} from "@fortawesome/free-solid-svg-icons"
 
 import Project1 from '../img/projects/project1.jpg'
 import Project2 from '../img/projects/project2.jpg'
-import Project3 from '../img/projects/project3.jpg'
-import Project4 from '../img/projects/project4.jpg'
-import Project5 from '../img/projects/project5.jpg'
 
 class Work extends React.Component {
 
@@ -29,24 +26,24 @@ class Work extends React.Component {
             <div class="projects">
                 <div class="item">
                     <a href="https://github.com/FellCode/HCLI">
-                        <img src="img/projects/project1.jpg" alt="project" />
+                        <img src={Project1} alt="project" />
                     </a>
                     <a href="https://github.com/FellCode/HCLI" class="btn-light">
-                    <i class="fa fa-eye"> Project</i>
+                    <FontAwesomeIcon icon={faEye} /> Projekt
                     </a>
                     <a href="https://github.com/FellCode/HCLI" class="btn-dark">
-                        <i class="fa fa-github"> Github</i>
+                    <FontAwesomeIcon icon={faGithub} /> Github
                     </a>
                 </div>
                 <div class="item">
                     <a href="https://github.com/FellCode/react_portfolio">
-                        <img src="img/projects/project2.jpg" alt="project" />
+                    <img src={Project2} alt="project" />
                     </a>
                     <a href="https://fellcode.me" class="btn-light">
-                        <i class="fa fa-eye"> Project</i>
+                    <FontAwesomeIcon icon={faEye} /> Projekt
                     </a>
                     <a href="https://github.com/FellCode/HCLI" class="btn-dark">
-                        <i class="fa fa-github"> Github</i>
+                    <FontAwesomeIcon icon={faGithub} /> Github
                     </a>
                 </div>
             </div>

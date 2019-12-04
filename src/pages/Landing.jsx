@@ -21,6 +21,9 @@ class Landing extends React.Component {
                 <a target="_blank" rel="noopener noreferrer" href="http://twitter.fellcode.me">
                     <FontAwesomeIcon icon={faTwitter} size="2x" />
                 </a>
+                <a target="_blank" rel="noopener noreferrer" href="http://instagram.com/fellcodephotos">
+                <FontAwesomeIcon icon={faInstagram} size="2x"  />
+                </a>
                 <a target="_blank" rel="noopener noreferrer" href="http://code.fellcode.me">
                 <FontAwesomeIcon icon={faGithub} size="2x"  />
                 </a>
