@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faTwitter, faGithub, fa500px } from "@fortawesome/free-brands-svg-icons"
+import { faTwitter, faGithub, fa500px, faInstagram } from "@fortawesome/free-brands-svg-icons"
 
 class Landing extends React.Component {
 
@@ -20,6 +20,9 @@ class Landing extends React.Component {
                 <div className="icons">
                     <a target="_blank" rel="noopener noreferrer" href="http://twitter.fellcode.me">
                         <FontAwesomeIcon icon={faTwitter} size="2x" />
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/fellcodephotos/">
+                        <FontAwesomeIcon icon={faInstagram} size="2x" />
                     </a>
                     <a target="_blank" rel="noopener noreferrer" href="http://code.fellcode.me">
                     <FontAwesomeIcon icon={faGithub} size="2x"  />

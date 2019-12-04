@@ -1,5 +1,6 @@
 import React from 'react';
 import Portrait from '../img/portrait.jpg';
+import Footer from '../components/Footer';
 
 class About extends React.Component {
 
@@ -62,9 +63,7 @@ class About extends React.Component {
                 </div>  
             </div>
         </main>
-        <footer id="main-footer">
-            Copyright &copy; 2018
-        </footer>
+        <Footer />
         </div>
         )
     }

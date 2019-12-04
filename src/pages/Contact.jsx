@@ -1,37 +1,36 @@
 import React from 'react';
-import Nav from '../components/Nav'
+import Footer from '../components/Footer';
 
-function Contact(props) {
+class Contact extends React.Component{
+
+    componentDidMount(){
+        document.body.classList.remove('bg-img');
+    }
+
+    render(){
     return (
       <div>
         <main id="contact">
-        <h1 class="lg-heading">
-            Contact <span class="text-secondary">Me</span>
-        </h1>
-        <h2 class="sm-heading">
-            This is how you can reach me...
-        </h2>
-        <div class="boxes">
-            <div>
-                <span class="text-secondary">Email:</span> test@test.de
-            </div>
-            <div>
-                <span class="text-secondary">Phone:</span> XXXX XXXXXX
-            </div>
-            <div>
-                <span class="text-secondary">Address:</span> Stuffstreet
+            <h1 className="lg-heading">
+                Contact <span class="text-secondary">Me</span>
+            </h1>
+            <h2 className="sm-heading">
+                This is how you can reach me...
+            </h2>
+            <div className="boxes">
+                <div>
+                    <span className="text-secondary">Email:</span> contact@fellcode.de
+                </div>
+                <div>
+                    <span className="text-secondary">Twitter:</span> @Fellcode
+                </div>
             </div>
 
-        </div>
-        
-    </main>
-
-
-  <footer id="main-footer">
-      Copyright &copy; 2018
-  </footer>
+        </main>
+        <Footer /> 
       </div>
     )
+    }
   }
 
 
